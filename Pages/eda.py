@@ -54,7 +54,7 @@ with st.sidebar:
 
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
     "[View the source code](https://github.com/cdebdeep/AgentBhuto.git)"
-    "[![Open in GitHub Codespaces](https://ideal-guacamole-q47g9p6xrj24xgj.github.dev/)"
+    "[Open in GitHub Codespaces](https://ideal-guacamole-q47g9p6xrj24xgj.github.dev/)"
 
 st.title("🔎 EDA - With your file")
 
@@ -104,7 +104,7 @@ with tab2:
             if agentexecutor:
                 try:
                     with st.spinner("Wait, response is generating... !"):                  
-
+                        st.success('Here is the response:', icon="✅")
                         myedahelper:MyEDAHelper = MyEDAHelper(agentexecutor)
                         retval = myedahelper.fnc_eda(question2)
                         message_placeholder = st.empty()                
@@ -116,7 +116,7 @@ with tab2:
                             time.sleep(0.01)
 
                             # Add a blinking cursor to simulate typing
-                            st.success('Here is the response:', icon="✅")
+                            
                             message_placeholder.markdown(full_response + "▌")
 
                             
@@ -154,7 +154,7 @@ with tab4:
         st.header("Generate")
         question4 = st.text_input(
         "Insert your query here",
-        placeholder="where columnname is less than 10?",
+        placeholder=" 'where columnname is less than 10?",
         disabled=not uploaded_file,
         )
         if uploaded_file and question4 and  openai_api_key:

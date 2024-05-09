@@ -45,13 +45,13 @@ with st.sidebar:
                 #st.write(e)
                 st.error('Please enter a valid  OpenAI API key to continue.', icon="🚨")
         else:
-            #st.write('Please add valid  OpenAI API key to continue.')
+            #st.write('Please add valid  OpenAI API key to continue.')=
             st.error('Please enter a valid  OpenAI API key to continue.', icon="🚨")
         
 
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-    "[View the source code](https://github.com/streamlit/llm-examples/blob/main/pages/2_Chat_with_search.py)"
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
+    "[View the source code](https://github.com/cdebdeep/AgentBhuto.git)"
+    "[![Open in GitHub Codespaces](https://ideal-guacamole-q47g9p6xrj24xgj.github.dev/)"
 
 st.title("🔎 EDA - With your file")
 

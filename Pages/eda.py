@@ -5,7 +5,7 @@ import re
 import pandas as pd
 import numpy as np
 
-import plotly.express as px
+
 import plotly.figure_factory as ff
 
 from langchain.agents import initialize_agent, AgentType

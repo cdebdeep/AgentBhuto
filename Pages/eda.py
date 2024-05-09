@@ -7,6 +7,9 @@ import numpy as np
 
 
 import plotly.figure_factory as ff
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 
 from langchain.agents import initialize_agent, AgentType
 from langchain.callbacks import StreamlitCallbackHandler
@@ -100,9 +103,6 @@ with tab2:
         if uploaded_file and question2 and  openai_api_key:
             if agentexecutor:
                 try:
-                    with st.container():
-                            fnc_graph(question2)
-
                     with st.spinner("Wait, response is generating... !"):                  
 
                         myedahelper:MyEDAHelper = MyEDAHelper(agentexecutor)
